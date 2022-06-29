@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*--------------reset css--------------------*/
+@media (min-width: 0) {
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 0;
+    
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #030505;
+  }
+
+  h2 {
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #030505;
+  }
+
+  h3 {
+    font-size: 27px;
+    line-height: 35px;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+
+  p,
+  span,
+  ul li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 10px 0;
+    color: #737373;
+  }
+
+
+  strong {
+    font-weight: 600;
+    color: #000;
+  }
+
+
+  form input,
+  form textarea {
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  form label {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-fluid {
+    width: 100%;
+    display: block;
+  }
+
+  button,
+  .main-btn {
+    padding: 16px 48px;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    background: linear-gradient(97.44deg, #0B0B0B 0%, #292524 100%);
+    border-radius: 80px;
+    text-decoration: none;
+  }
+
+  button:hover,
+  .main-btn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    outline: none;
+    text-decoration-line: underline;
+    color: #030505;
+  }
+
+  .list-style {
+    margin: 20px 5px;
+  }
+
+  .list-style li {
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .list-style li::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    content: "";
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .section-top-margin {
+    margin-top: 50px;
+  }
+
+  .section-bottom-margin {
+    margin-bottom: 50px;
+  }
+
+  .section-top-padding {
+    padding-top: 50px;
+  }
+
+  .section-bottom-padding {
+    padding-bottom: 50px;
+  }
+
+  .section-top-margin-row {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  h4 {
+    font-size: 25px;
+    line-height: 35px;
+
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  h6 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  p,
+  span,
+  ul li {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .section-top-margin {
+    margin-top: 70px;
+  }
+
+  .section-bottom-margin {
+    margin-bottom: 70px;
+  }
+
+  .section-top-padding {
+    padding-top: 70px;
+  }
+
+  .section-bottom-padding {
+    padding-bottom: 70px;
+  }
+
+  .section-top-margin-row {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+
+  h5 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  p,
+  span,
+  ul li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-padding {
+    padding: 96px 0;
+  }
+
+  .section-top-margin {
+    margin-top: 96px;
+  }
+
+  .section-bottom-margin {
+    margin-bottom: 96px;
+  }
+
+  .section-top-padding {
+    padding-top: 96px;
+  }
+
+  .section-bottom-padding {
+    padding-bottom: 96px;
+  }
+
+  .section-top-margin-row {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1680px) {}
+
+@media (min-width:1920px) {}
